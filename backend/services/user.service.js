@@ -1,6 +1,6 @@
 import userModel from '../models/user.model.js'
 
-export const createUser = async({
+ const createUser = async({
     email,password
 }) =>{
     if(!email||!password){
@@ -13,4 +13,8 @@ export const createUser = async({
         password:hashedPassword
     }) ;
     return user ;
+}
+
+export default {
+    createUser
 }
